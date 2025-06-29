@@ -9,7 +9,7 @@ class Join_Role(commands.Cog):
     async def on_member_join(self, member):
 
         guild = member.guild
-        role = guild.get_role(1064569655278182400)
+        role = guild.get_role(761558981231378462)
 
         try:  
             print(f"{member.name} a rejoins le serveur")
