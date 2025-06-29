@@ -13,10 +13,6 @@ class On_Ready(commands.Cog):
         try:
             synced = await self.bot.tree.sync()
             print(f'Synced {len(synced)} command(s)')
-            
-            guild = discord.Object(id=1064207633583710348)
-            await self.bot.tree.sync(guild=guild)
-            print("Slash commands synchronisées uniquement dans ce serveur.")
 
             activity = discord.CustomActivity('Cherche de la moune')
             await self.bot.change_presence(status=discord.Status.online, activity=activity)
